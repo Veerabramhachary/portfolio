@@ -1,73 +1,39 @@
-# React + TypeScript + Vite
+# Portfolio ✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-18.2-blue.svg)](https://reactjs.org/)
 
-Currently, two official plugins are available:
+A responsive web developer portofolio drak theme with smooth animartions, showcasing React skills, GSAP interactions, and modern UI?UX design principles.[web:4] [menory:1]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#🛠️ Tech stack 
+| Frontend | Tools & Libraries |
+| -------- | ----------------- |
+| React 18 | GSAP |
+| Styling | Tailwind CSS |
+| Other | Vite, React toastiify |
 
-## React Compiler
+## 🚀 Quick Start
+Clone and run loacally in vs Code (Windows 11 workflow):
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+1. **Clone the repo**
+     ```blash
+     git clone https://github.com/veerabramhachary/portfolio.git
+     cd portfolio
+2. **Install dependencies**
+   npm install
+3. **Run development sever**
+   npm run dev
+   Opens at http:localhost:5173
+# 📱Sreenshots
+## Desktop View
+## Mobile View
 
-## Expanding the ESLint configuration
+#live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Contributing 
+  1. Fock the project
+  2. Create your feture branch (git checkout -b feture/AmazingFeature)
+  3. Commit changes (git commit -m 'Add some AmazingFeature')
+  4. Push to brach(git push origin feture/AmazingFeature)
+  5. Open Pull Reaquest
+Feedback welcome! 
