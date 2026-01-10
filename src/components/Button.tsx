@@ -3,7 +3,7 @@ import { useFormStatus } from "react-dom";
 export type buttonTypes = {
     text: string;
     style: string;
-    type: string;
+    type: "button" | "submit" | "reset";
     url?: string;
     isSubmitting?: boolean;
 };
