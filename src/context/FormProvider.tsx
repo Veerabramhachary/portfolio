@@ -1,8 +1,8 @@
 import { useContext, useEffect, useReducer } from "react";
 import { formReducer, initialState } from "./formStore";
-import { FormContext, FormContextType } from "./FormContext";
+import { FormContext, type FormContextType } from "./FormContext";
 import emailjs from "@emailjs/browser";
-import { toast, ToastContainer, Flip, Zoom } from "react-toastify";
+import { toast, ToastContainer, Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const FormProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
@@ -62,7 +62,7 @@ const FormProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
         }
     };
 
-    const value: FormContextType = { state, handleChange };
+    const value: FormContextType = { state, handleChange, handleSubmit };
 
     return (
         <FormContext.Provider value={value}>
