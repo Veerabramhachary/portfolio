@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+*{
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  src: url("/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format('truetype');
+  font-weight:500;
+}
+
+@font-face {
+  font-family: 'Space_Grotesk';
+  src: url("./assets/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf") format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Space_Grotesk';
+}
