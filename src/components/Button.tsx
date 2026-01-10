@@ -14,7 +14,8 @@ const Button = ({
     url,
     isSubmitting =false
 }: buttonTypes) => {
-    const setUrl = (seturl: string) => {
+    const setUrl = (seturl?: string) => {
+        if (!seturl) return;
         const el = document.getElementById(seturl);
         el?.scrollIntoView({ behavior: "smooth", block: "start" });
     };
@@ -26,7 +27,7 @@ const Button = ({
     return (
         <button
             onClick={() => setUrl(url)}
-            type={type}
+            type={type as "button" | "submit" | "reset"} // Type assertion
             disabled={disabled}
             className={`rounded-lg py-3 px-5 px-auto border-0 shadow-lg mt-5 font-bold cursor-pointer text-[12px] ${style}`}
         >
