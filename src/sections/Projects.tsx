@@ -1,4 +1,5 @@
 import { projects } from "../assets/assets";
+import Button from "../components/Button";
 
 const Projects = () => {
     return (
@@ -6,26 +7,72 @@ const Projects = () => {
             className="w-full flex items-center justify-center flex-col gap-6 px-5 md:px-10 lg:px-12 xl:px-15 my-10"
             id="projects"
         >
-            <h1 className="font-bold text-6xl md:text-7xl lg:text-8xl">
+            {/* Removed the trailing 't' in className */}
+            <h1 className="font-bold text-6xl md:text-7xl lg:text-8xl mt-20">
                 Projects
             </h1>
-            {/* projects will be added later using mapping */}
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div className="w-full rounded-lg shadow-md flex flex-col gap-10">
                 {projects.map((project, index) => (
                     <div
                         key={index}
-                        className="w-full h-64 bg-gray-200 rounded-lg shadow-md flex flex-col items-center justify-center"
+                        className={`flex p-4 items-center gap-10 flex-col ${
+                            project.direction_row === 'row-reverse' ? 'md:flex-row-reverse' : 'md:flex-row'
+                        }`}
                     >
-                        <h2 className="text-2xl font-semibold">
-                            {project.name}
-                        </h2>
-                        <p className="text-lg">{project.description}</p>
+                        {/* Text Content */}
+                        <div className="w-full flex flex-col gap-3">
+                            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
+                                {project.name}
+                            </h1>
+                            <div className="flex flex-row gap-2 my-4 flex-wrap">
+                                {project.skills.map((skill, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="px-3 py-2 bg-gray-100 rounded-lg border border-gray-200"
+                                    >
+                                        <span className="text-[13px] md:text-[16px] text-gray-700">
+                                            {skill}
+                                        </span>
+                                    </div>
+                                ))}
+                            </div>
+                            <p className="text-gray-600 leading-relaxed">
+                                {project.description}
+                            </p>
+                            <div className="flex flex-row gap-5 mt-4">
+                                <Button
+                                    type="button"
+                                    text="Live"
+                                    style="bg-emerald-600 px-6 py-2 rounded text-white"
+                                    url={project.link}
+                                />
+                                <Button
+                                    type="button"
+                                    text="Repo"
+                                    style="bg-slate-800 px-6 py-2 rounded text-white"
+                                    url={project.repo}
+                                />
+                            </div>
+                        </div>
+
+                        {/* Image Content */}
+                        <div className="w-full h-full flex justify-center items-center p-6">
+                            <img
+                                src={project.image}
+                                className="rounded-xl object-cover w-full h-auto shadow-sm"
+                                alt={project.name}
+                            />
+                        </div>
                     </div>
                 ))}
             </div>
 
-            <p className="text-lg md:text-xl lg:text-2xl">Coming Soon...</p>
+            <p className="text-lg md:text-xl lg:text-2xl mt-10 italic text-gray-400">
+                Coming Soon...
+            </p>
         </div>
     );
 };
+
 export default Projects;
