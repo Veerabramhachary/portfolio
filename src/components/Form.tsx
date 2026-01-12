@@ -73,7 +73,7 @@ const Form = () => {
                     <div className="group flex flex-col mb-5">
                         <label
                             htmlFor="subject"
-                            className="group-focus-within:text-emerald-500"
+                            className="text-gray-500 group-focus-within:text-emerald-500"
                         >
                             Your subject
                         </label>
@@ -90,7 +90,7 @@ const Form = () => {
                     <div className="group mb-5">
                         <label
                             htmlFor="Message"
-                            className="group-focus-within:text-emerald-500"
+                            className="text-gray-500 group-focus-within:text-emerald-500"
                         >
                             Message:
                         </label>

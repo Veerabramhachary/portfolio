@@ -15,7 +15,7 @@ const Hero = () => {
                 </h1>
                 <p className="font-light text-gray-500">
                     I'm a frontend developer based in india, I'll help you{" "}
-                    <br />
+                    <br  className="hidden md:inline"/>
                     build beautiful websites your users will love.
                 </p>
                 <div className="flex flex-row gap-4">
@@ -28,7 +28,7 @@ const Hero = () => {
                     <Button
                         type="button"
                         text="Browse Projects"
-                        style="bg-gray-300 "
+                        style="bg-gray-300 hover:text-white hover:bg-emerald-600"
                         url="projects"
                     />
                 </div>

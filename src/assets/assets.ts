@@ -12,6 +12,7 @@ import { SiExpress, SiTailwindcss, SiTypescript, SiVite } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { GiTBrick } from "react-icons/gi";
 import { FiFigma } from "react-icons/fi";
+import e_commerce from "./ecommerce-Macbook-Air-screenshot.png";
 
 export const icons = {
     menu: MdMenu,
@@ -76,9 +77,36 @@ export const skills = [
         ],
     },
 ];
+type typeProject = {
+    name: string;
+    description: string;
+    link: string;
+    repo: string;
+    image: string;
+    direction_row: string;
+    direction_col: string;
+    skills: string[];
+};
 
-export const projects = [
-    { name: "", description: "", link: "", image: ""},
-    { name: "", description: "", link: "", image: "" },
-    { name: "", description: "", link: "", image: "" }
-]
+export const projects: typeProject[] = [
+    {
+        name: "Forever",
+        description: "E-commerce website used react and node.js",
+        link: "",
+        repo: "https://github.com/veerabramhachary/forever",
+        image: e_commerce,
+        direction_row: "row-reverse",
+        direction_col: "column-reverse",
+        skills: ["React", "Node.js", "Express", "MongoDb", "Tailwind css"]
+    },
+    {
+        name: "Forever",
+        description: "E-commerce website used react and node.js",
+        link: "",
+        repo: "https://github.com/veerabramhachary/forever",
+        image: e_commerce,
+        direction_row: "row",
+        direction_col: "column",
+        skills: ["React", "Node.js", "Express", "MongoDb", "Tailwind css"]
+    },
+];

@@ -4,7 +4,7 @@ import FormProvider from "../context/FormProvider";
 const Contact = () => {
     return (
         <div
-            className="h-screen flex justify-center flex-col items-center px-5 md:px-10 lg:px-12 xl:px-15"
+            className=" flex justify-between md:justify-center md:h-screen flex-col items-center px-5 md:px-10 lg:px-12 xl:px-15"
             id="contact"
         >
             <div className="flex items-center flex-col mb-10 text-center">

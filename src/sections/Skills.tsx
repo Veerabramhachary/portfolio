@@ -3,12 +3,12 @@ const Skills = () => {
     return (
         <div
             id="skills"
-            className="w-full h-screen flex justify-center flex-col gap-6 px-5 md:px-10 lg:px-12 xl:px-15"
+            className="w-full h-screen flex lg:justify-center flex-col gap-6 px-5 md:px-10 lg:px-12 xl:px-15"
         >
             <h1 className="font-bold text-6xl md:text-7xl lg:text-8xl">
                 Skills<span className="text-emerald-600">.</span>
             </h1>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-flow-col">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-flow-col uppercase">
                 {skills.map((item, index) => (
                     <div key={index} className="flex flex-col">
                         <h2 className="text-[20px] md:text-2xl lg:text-3xl xl:text-4xl">

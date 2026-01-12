@@ -18,6 +18,10 @@ const About = () => {
                         </p>
                     </div>
                 </div>
+                <div>
+                    <h3 className="font-bold">Social Media</h3>
+                    <p><a href="https://linkedin.com/">LinkedIn</a></p>
+                </div>
                 <div className="w-full flex flex-row gap-5">
                     <div>
                         <h3>My Stack.</h3>
