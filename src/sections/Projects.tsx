@@ -1,5 +1,4 @@
 import { projects } from "../assets/assets";
-import Button from "../components/Button";
 
 const Projects = () => {
     return (
