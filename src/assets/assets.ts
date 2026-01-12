@@ -93,7 +93,7 @@ export const projects: typeProject[] = [
         name: "Forever",
         description: "E-commerce website used react and node.js",
         link: "",
-        repo: https://github.com/Veerabramhachary/Forever-ecommerce.git,
+        repo: "https://github.com/Veerabramhachary/Forever-ecommerce.git",
         image: e_commerce,
         direction_row: "row-reverse",
         direction_col: "column-reverse",
