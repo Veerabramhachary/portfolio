@@ -86,6 +86,7 @@ type typeProject = {
     direction_row: string;
     direction_col: string;
     skills: string[];
+    repo: string;
 };
 
 export const projects: typeProject[] = [
@@ -93,20 +94,10 @@ export const projects: typeProject[] = [
         name: "Forever",
         description: "E-commerce website used react and node.js",
         link: "",
-        repo: "https://github.com/veerabramhachary/forever",
+        repo: "https://github.com/veerabramhachary/Forever-ecommerce",
         image: e_commerce,
         direction_row: "row-reverse",
         direction_col: "column-reverse",
-        skills: ["React", "Node.js", "Express", "MongoDb", "Tailwind css"]
-    },
-    {
-        name: "Forever",
-        description: "E-commerce website used react and node.js",
-        link: "",
-        repo: "https://github.com/veerabramhachary/forever",
-        image: e_commerce,
-        direction_row: "row",
-        direction_col: "column",
         skills: ["React", "Node.js", "Express", "MongoDb", "Tailwind css"]
     },
 ];
