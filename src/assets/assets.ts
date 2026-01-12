@@ -86,7 +86,6 @@ type typeProject = {
     direction_row: string;
     direction_col: string;
     skills: string[];
-    repo: string;
 };
 
 export const projects: typeProject[] = [
