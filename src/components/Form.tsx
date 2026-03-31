@@ -21,11 +21,11 @@ const Form = () => {
                     <div className="flex flex-col gap-5">
                         <div className="flex flex-row items-center gap-5">
                             <icons.phone className="" />
-                            +915937937594
+                            +917981901713
                         </div>
                         <div className="flex flex-row items-center gap-5">
                             <icons.email />
-                            contact@gmail.com
+                            veerabramhachary2003@gmail.com
                         </div>
                         <div className="flex flex-row items-center gap-5">
                             <icons.location />
@@ -75,7 +75,7 @@ const Form = () => {
                             htmlFor="subject"
                             className="text-gray-500 group-focus-within:text-emerald-500"
                         >
-                            Your subject
+                            Your subject:
                         </label>
                         <input
                             type="text"

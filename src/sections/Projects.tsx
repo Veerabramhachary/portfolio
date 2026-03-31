@@ -40,8 +40,8 @@ const Projects = () => {
                                 {project.description}
                             </p>
                             <div className="flex flex-row gap-5 mt-4">
-                                <button type="button" onClick={() => window.open(project.link, "_blank")} className="bg-emerald-600 px-6 py-2 rounded text-white" >Live</button>
-                                <button type="button" onClick={() => window.open(project.repo, "_blank")} className="bg-slate-800 px-6 py-2 rounded text-white">Repo</button>
+                                <button type="button" onClick={() => window.open(project.link, "_blank")} className="bg-emerald-600 px-6 py-2 rounded text-white cursor-pointer shadow-2xl" >Live</button>
+                                <button type="button" onClick={() => window.open(project.repo, "_blank")} className="bg-slate-800 px-6 py-2 rounded text-white cursor-pointer shadow-2xl">Repo</button>
                             </div>
                         </div>
 

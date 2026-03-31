@@ -13,6 +13,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { GiTBrick } from "react-icons/gi";
 import { FiFigma } from "react-icons/fi";
 import e_commerce from "./ecommerce-Macbook-Air-screenshot.png";
+import truvora from "./image.png"
 
 export const icons = {
     menu: MdMenu,
@@ -99,4 +100,14 @@ export const projects: typeProject[] = [
         direction_col: "column-reverse",
         skills: ["React", "Node.js", "Express", "MongoDb", "Tailwind css"]
     },
+    {
+        name: "Truvora",
+        description: "Subscriptions tracker with mordern UI/UX also dashoard with visual charts",
+        link: "https://truvora-sigma.vercel.app/",
+        repo: "https://github.com/Veerabramhachary/truvora.git",
+        image: truvora,
+        direction_row: "row",
+        direction_col: "column",
+        skills: ["Nextjs", "refine", "Tailwind css", "Typescript", "shadcn ui", "clerk", "neon(postgreSQL)"]
+    }
 ];
